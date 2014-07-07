@@ -96,7 +96,7 @@ module.exports = function(grunt) {
         },
         watch: {
             e2e: {
-                files: ['test/**'],
+                files: ['tests/**'],
                 tasks: ['build', 'protractor:e2e' ]
             },
             src: {
