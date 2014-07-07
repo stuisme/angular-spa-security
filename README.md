@@ -1,4 +1,4 @@
-angular-spa-security
+angular-spa-security    [![Build Status](https://travis-ci.org/stuisme/angular-spa-security.svg?branch=master)](https://travis-ci.org/stuisme/angular-spa-security)
 ====================
 
 A handy security provider for Angular JS. Works with MVC 5's SPA template without any modifications to the backend code.
