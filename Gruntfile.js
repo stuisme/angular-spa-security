@@ -73,10 +73,7 @@ module.exports = function(grunt) {
             },
             run: {},
             travis: {
-                options: {
-                    sauceUser: 'seaves',
-                    sauceKey: 'b86fb77e-06b6-4df0-9865-022bd492b167'
-                }
+
             }
         }
     });
