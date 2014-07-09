@@ -1,5 +1,9 @@
 language: node_js
 node_js:
   - "0.10"
+addons:
+  sauce_connect:
+      username: "seaves"
+      access_key: "b86fb77e-06b6-4df0-9865-022bd492b167"
 before_script:
   - npm install -g grunt-cli
