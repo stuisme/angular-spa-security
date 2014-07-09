@@ -13,10 +13,13 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "~0.2.7",
     "karma": "^0.12.16",
-    "karma-cli": "^0.0.4"
+    "karma-cli": "^0.0.4",
+    "protractor": "^1.0.0-rc2",
+    "grunt-protractor-runner": "^1.0.1"
   },
   "scripts": {
     "pretest": "npm install",
-    "test": "grunt default"
+    "test": "grunt test",
+    "install": "node node_modules/protractor/bin/webdriver-manager update"
   }
 }
