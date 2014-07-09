@@ -9,7 +9,7 @@ exports.config = {
         'browserName': 'chrome'
     }],
     specs: ['../specs/**/*.js'],
-    baseUrl: 'http://localhost:9001/site/',
+    baseUrl: 'http://localhost:9000/site/',
     sauceUser: 'seaves',
     sauceKey: 'b86fb77e-06b6-4df0-9865-022bd492b167',
     jasmineNodeOpts: {
