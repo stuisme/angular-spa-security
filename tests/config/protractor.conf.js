@@ -1,6 +1,6 @@
 exports.config = {
     // Do not start a Selenium Standalone sever - only run this using chrome.
-    chromeOnly: true,
+    chromeOnly: false,
 
     // Capabilities to be passed to the webdriver instance.
     multiCapabilities: [{
