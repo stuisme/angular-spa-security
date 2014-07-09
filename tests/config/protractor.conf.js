@@ -3,12 +3,15 @@ exports.config = {
     chromeOnly: false,
 
     // Capabilities to be passed to the webdriver instance.
-    multiCapabilities: [
-        {'browserName': 'firefox'},
-        {'browserName': 'chrome'},
-        {'build': os.environ["TRAVIS_BUILD_NUMBER"]},
-        {'tags': [os.environ["TRAVIS_PYTHON_VERSION"], "CI"]}
-    ],
+    multiCapabilities: [{
+        'browserName': 'firefox',
+        'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        'build': process.env.TRAVIS_BUILD_NUMBER
+    },{
+        'browserName': 'chrome',
+        'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+        'build': process.env.TRAVIS_BUILD_NUMBER
+    }],
     specs: ['../specs/**/*.js'],
     baseUrl: 'http://localhost:9000/site/',
     sauceUser: 'seaves',
