@@ -4,6 +4,7 @@ angular.module('security')
         //Options
         securityProvider.registerThenLogin = true;
         securityProvider.usePopups = false;
+        securityProvider.useLocalStorage = false;
         securityProvider.urls = {
             login: '/login',
             registerExternal: '/registerExternal',
@@ -315,7 +316,7 @@ angular.module('security')
                 return deferred.promise;
             };
 
-            Security.mangeInfo = function() {
+            Security.manageInfo = function() {
                 var deferred = $q.defer();
 
                 Api.manageInfo().success(function (manageInfo) {
